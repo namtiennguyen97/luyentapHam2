@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai9:</title>
+
+</head>
+<body>
+
+<script>
+function check(a,b,c,d) {
+     a = String(prompt("Nhap a :", ""));
+     b = String(prompt("Nhap b:", ""));
+     d = String(prompt("Nhap c:",""));
+     c = String(prompt("Nhap ki tu bat ki: ", ""));
+    let luuTru = [];
+    luuTru.push(a);
+    luuTru.push(b);
+    luuTru.push(d);
+    alert(luuTru.join());
+    for (let e = 0; e < luuTru.length; e++) {
+        if (luuTru.indexOf(c[e]) !== -1) {
+            alert("Phần tử tồn tại trong mảng với giá trị là: " + c.toLocaleString());
+            break;
+        } else {
+            alert("Không tồn tại một phần tử nào như thế");
+            break;
+        }
+    }
+    return c;
+}
+    // ma ben ngoai
+let a;
+let b;
+let c;
+check(a,b,c);
+
+
+</script>
+</body>
+<iframe width="160" height="150" src="https://www.youtube.com/embed/Egn_VNVKzI4?list=RDMMEgn_VNVKzI4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</html>

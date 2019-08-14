@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai8:</title>
+</head>
+<body>
+<script>
+    function swap(a,b,c) {
+        let mangAo =[];
+        mangAo.push(a);
+        mangAo.push(b);
+        mangAo.push(c);
+        mangAo.reverse(a,b,c);
+        return mangAo;
+    }
+    let n1 = Number(prompt("Nhap a:"));
+    let n2 = Number(prompt("Nhap b:"));
+    let n3 = Number(prompt("Nhap c: "));
+    alert(swap(n1,n2,n3));
+</script>
+</body>
+</html>
